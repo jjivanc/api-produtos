@@ -83,6 +83,6 @@ server.delete('/produtos/:id', (req, res) => {
 })
 
 
-server.listen(3000, () => {
+server.listen(process.env.PORT || 5000), () => {
   console.log('Server rodando na porta 3000')
 })
