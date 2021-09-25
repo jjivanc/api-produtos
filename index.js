@@ -86,4 +86,4 @@ server.delete('/produtos/:id', (req, res) => {
 server.listen(PORT), () => {
   console.log('Server rodando na porta 3000')
 	console.log(`Listening on ${ PORT }`)
-})
+}
