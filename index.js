@@ -1,6 +1,6 @@
 const express = require('express')
 const { v4: uuid } = require('uuid')
-
+const PORT = process.env.PORT || 5000
 const server = express()
 
 server.use(express.json())
@@ -83,6 +83,7 @@ server.delete('/produtos/:id', (req, res) => {
 })
 
 
-server.listen(process.env.PORT || 5000), () => {
+server.listen(PORT), () => {
   console.log('Server rodando na porta 3000')
+	console.log(`Listening on ${ PORT }`)
 })
